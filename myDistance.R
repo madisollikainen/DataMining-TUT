@@ -1,43 +1,4 @@
 # Distance functions 
-# 
-
-a<-matrix(,3,2)
-b<-matrix(,3,2)
-
-a[1,1]=4
-a[2,1]=5
-
-a[1,2]=2
-a[2,2]=7
-
-b[1,1]=5
-b[2,1]=5
-
-b[1,2]=1
-b[2,2]=3
-
-
-
-a <- c(4,5)
-b <- c(5,5)
-a <- c(2,7)
-b <- c(1,3)
-
-c <- (a-b)
-k <- colSums(abs(a-b)/(abs(a)+abs(b)))
-
-
-x1 <- c(1:4)
-t(x1)
-
-x2 <- c(2:5)
-x3 <- c(11:6)
-
-X <- rbind(x1,x2,x3)
-
-cov(X,X)
-
-nrow(X)
 
 # Set the directory for testing
 # setwd("PhD/courses/data-mining/")
@@ -87,3 +48,44 @@ myDistance <- function(x, y, metric="Euclidean", IC=NULL){
   }
   
 }
+
+
+## Some testing ...  
+
+# a<-matrix(,3,2)
+# b<-matrix(,3,2)
+# 
+# a[1,1]=4
+# a[2,1]=5
+# 
+# a[1,2]=2
+# a[2,2]=7
+# 
+# b[1,1]=5
+# b[2,1]=5
+# 
+# b[1,2]=1
+# b[2,2]=3
+# 
+# 
+# 
+# a <- c(4,5)
+# b <- c(5,5)
+# a <- c(2,7)
+# b <- c(1,3)
+# 
+# c <- (a-b)
+# k <- colSums(abs(a-b)/(abs(a)+abs(b)))
+# 
+# 
+# x1 <- c(1:4)
+# t(x1)
+# 
+# x2 <- c(2:5)
+# x3 <- c(11:6)
+# 
+# X <- rbind(x1,x2,x3)
+# 
+# cov(X,X)
+# 
+# nrow(X)
